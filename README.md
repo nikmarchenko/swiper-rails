@@ -1,6 +1,6 @@
-# Swiper::Rails
+# Swiper for Rails Asset Pipeline
 
-TODO: Write a gem description
+Integrates [Swiper](http://www.idangero.us/sliders/swiper/) for Rails Asset Pipeline.
 
 ## Installation
 
@@ -12,9 +12,13 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Add Swiper to your `application.css`
+    
+    $ *= require swiper
 
-    $ gem install swiper-rails
+And to `application.js`
+    
+    $ //= require swiper
 
 ## Usage
 
