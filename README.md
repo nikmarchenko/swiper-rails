@@ -1,6 +1,6 @@
 # Swiper for Rails Asset Pipeline
 
-Integrates [Swiper](http://www.idangero.us/sliders/swiper/) for Rails Asset Pipeline.
+[Swiper](http://www.idangero.us/sliders/swiper/) - is the free and ultra lightweight mobile touch slider. SwiperRails integrates it to yours Rails application.
 
 ## Installation
 
@@ -14,15 +14,34 @@ And then execute:
 
 Add Swiper to your `application.css`
     
-    $ *= require swiper
+    *= require swiper
 
 And to `application.js`
     
-    $ //= require swiper
+    //= require swiper
 
 ## Usage
 
-TODO: Write usage instructions here
+SwiperRails has helper method, which can be useful, if you need dynamic slider.
+
+    = swiper @items { |item| item.image }
+
+it will result the following html:
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-item">
+          <img alt="Image1" src="/images/image1" /></div>
+        </div>
+        ...
+      </div>
+    </div>
+
+For more information about Swiper's usage check (http://www.idangero.us/sliders/swiper/api.php)
+
+## Customizing
+
+Run `rails g swiper`. It will copy Swiper's stylesheet to yours application and you will be able to customize styles.
 
 ## Contributing
 
