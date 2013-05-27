@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = Swiper::Rails::VERSION
   gem.authors       = ["Nik Marchenko"]
   gem.email         = ["nik.marchenko@gmail.com"]
-  gem.description   = %q{Swiper toolit for Rails Asset Pipeline}
+  gem.description   = %q{Swiper toolkit for Rails Asset Pipeline}
   gem.summary       = %q{swiper-rails integrates Swiper toolkit for Rails Asset Pipeline}
   gem.homepage      = "https://github.com/nikmarchenko/swiper-rails"
 
